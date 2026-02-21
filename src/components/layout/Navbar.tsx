@@ -1,3 +1,4 @@
+"use client";
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -30,6 +31,7 @@ export default function Navbar() {
     const { user, login, logout } = useAuth();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const { isMaintenanceMode } = useMaintenance();
+    console.log("Navbar Render: isMaintenanceMode =", isMaintenanceMode);
 
     const toggleMobileMenu = () => {
         if (!isMaintenanceMode) {
@@ -53,8 +55,11 @@ export default function Navbar() {
 
     return (
         <>
-            <div className={styles.navbarContainer}>
-                <nav className={styles.navbar}>
+            <div
+                className={styles.navbarContainer}
+                style={{ top: isMaintenanceMode ? '70px' : '20px' }}
+            >
+                <nav className={styles.navbar} style={{ pointerEvents: isMaintenanceMode ? 'none' : 'auto' }}>
                     <Link href="/" className={styles.logo}>
                         <div className={styles.logoIcon}>
                             <Image src={logo} alt="DevPath Logo" width={32} height={32} className="rounded-full" />

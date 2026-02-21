@@ -8,13 +8,12 @@ import { useMaintenance } from '@/hooks/useMaintenance';
 
 export default function MaintenanceBanner() {
     const { isMaintenanceMode, maintenanceMessage } = useMaintenance();
+    console.log("Banner Render: Mode =", isMaintenanceMode, "Msg =", maintenanceMessage);
 
     if (!isMaintenanceMode) return null;
 
     return (
-        <motion.div
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+        <div
             className="fixed top-0 left-0 right-0 z-[2000] h-[50px] bg-gradient-to-r from-orange-600/90 to-red-600/90 backdrop-blur-md border-b border-white/10 flex items-center justify-center px-4 shadow-lg text-white"
         >
             <div className="flex items-center gap-3 text-sm md:text-base font-medium text-center">
@@ -30,6 +29,6 @@ export default function MaintenanceBanner() {
             >
                 <X size={16} />
             </button> */}
-        </motion.div>
+        </div>
     );
 }

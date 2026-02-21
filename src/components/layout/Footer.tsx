@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Github, Twitter, Send, Book, Cloud, Flag, Users, RefreshCw, Code, Globe } from 'lucide-react';
+import { Github, Twitter, Send, Book, Cloud, Flag, Users, RefreshCw, Code, Globe, MessageSquare } from 'lucide-react';
 import logo from '@/assets/logo.png';
 import styles from './Footer.module.css';
 
@@ -53,6 +53,9 @@ export default function Footer() {
                             />
                         </div>
                         <div className={styles.links}>
+                            <Link href="/complaints" className={styles.link}>
+                                <MessageSquare size={16} /> Community Complaint
+                            </Link>
                             <Link href="/updater" className={styles.link}>
                                 <RefreshCw size={16} /> Updater
                             </Link>

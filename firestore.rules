@@ -209,5 +209,11 @@ service cloud.firestore {
     match /admin_notifications/{notificationId} {
       allow read, write: if isSuperAdmin() || isAdmin();
     }
+
+    // Settings collection (for Maintenance Mode etc)
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isSuperAdmin();
+    }
   }
 }

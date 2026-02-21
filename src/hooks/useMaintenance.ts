@@ -20,13 +20,24 @@ export function useMaintenance() {
         const unsubscribe = onSnapshot(doc(db, 'settings', 'general'), (doc) => {
             if (doc.exists()) {
                 const data = doc.data();
+                // Robust check for the boolean, checking for common typos (trailing colon)
+                // The user created 'maintenanceMode:' instead of 'maintenanceMode'
+                const modeValue = data.maintenanceMode !== undefined ? data.maintenanceMode : data['maintenanceMode:'];
+
+                const rawMessage = data.maintenanceMessage || 'We are currently under scheduled maintenance. Please check back later.';
+                const cleanedMessage = rawMessage.replace(/^"|"$/g, '');
+
+                // Handle string "true" or boolean true
+                const isActive = modeValue === true || modeValue === "true";
+
                 setState({
-                    isMaintenanceMode: data.maintenanceMode || false,
-                    maintenanceMessage: data.maintenanceMessage || 'We are currently under scheduled maintenance. Please check back later.',
+                    isMaintenanceMode: isActive,
+                    maintenanceMessage: cleanedMessage,
                     loading: false,
                 });
             } else {
                 // If document doesn't exist, assume no maintenance (or handle strictly)
+                console.log("Maintenance Hook: Document does not exist");
                 setState({
                     isMaintenanceMode: false,
                     maintenanceMessage: '',
@@ -34,7 +45,7 @@ export function useMaintenance() {
                 });
             }
         }, (error) => {
-            console.error("Error fetching maintenance status:", error);
+            console.error("Maintenance Hook: Error fetching maintenance status:", error);
             // On error, default to false to avoid locking everyone out due to permission issues if not intended
             setState(prev => ({ ...prev, loading: false }));
         });

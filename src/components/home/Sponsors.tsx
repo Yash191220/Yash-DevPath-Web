@@ -1,10 +1,16 @@
 "use client";
 
 import Image from 'next/image';
+import oscgLogo from '@/assets/oscg26.png';
 import styles from './Sponsors.module.css';
 
 export default function Sponsors() {
     const communitySponsors = [
+        {
+            name: "OSCG",
+            logo: oscgLogo,
+            url: "https://osconnect.org/"
+        },
         {
             name: "Elite Coders",
             logo: "https://www.elitecoders.xyz/logo.png",

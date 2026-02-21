@@ -1,0 +1,242 @@
+[
+  {
+    "rank": 1,
+    "project": "OmniCast",
+    "total": 23.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 4.0,
+      "design": 4.0,
+      "innovation": 5.0,
+      "presentation": 4.0
+    }
+  },
+  {
+    "rank": 2,
+    "project": "EchoDao",
+    "total": 22.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 5.0,
+      "design": 4.0,
+      "innovation": 4.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 3,
+    "project": "Tiya",
+    "total": 21.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 3.0,
+      "design": 4.0,
+      "innovation": 3.0,
+      "presentation": 4.0
+    }
+  },
+  {
+    "rank": 4,
+    "project": "EVM event WatchDog",
+    "total": 20.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 5.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 5,
+    "project": "EcoSage",
+    "total": 19.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 3.0,
+      "design": 4.0,
+      "innovation": 4.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 6,
+    "project": "AidLedger",
+    "total": 19.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 2.0,
+      "design": 3.0,
+      "innovation": 4.0,
+      "presentation": 4.0
+    }
+  },
+  {
+    "rank": 7,
+    "project": "Nexus",
+    "total": 17.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 4.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 8,
+    "project": "Whistle Chain",
+    "total": 17.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 3.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 9,
+    "project": "PhishZap",
+    "total": 16.0,
+    "details": {
+      "originality": 4.0,
+      "technical": 2.0,
+      "design": 4.0,
+      "innovation": 2.0,
+      "presentation": 4.0
+    }
+  },
+  {
+    "rank": 10,
+    "project": "Arcane Protocol",
+    "total": 16.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 3.0,
+      "design": 5.0,
+      "innovation": 2.0,
+      "presentation": 2.0
+    }
+  },
+  {
+    "rank": 11,
+    "project": "LoanFlowAI",
+    "total": 15.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 3.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 12,
+    "project": "Chaukas",
+    "total": 15.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 4.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 13,
+    "project": "NexusFlow",
+    "total": 15.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 2.0,
+      "design": 3.0,
+      "innovation": 3.0,
+      "presentation": 4.0
+    }
+  },
+  {
+    "rank": 14,
+    "project": "4Clover",
+    "total": 15.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 3.0,
+      "design": 5.0,
+      "innovation": 3.0,
+      "presentation": 2.0
+    }
+  },
+  {
+    "rank": 15,
+    "project": "Smart Kisan Mitra",
+    "total": 14.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 3.0,
+      "design": 2.0,
+      "innovation": 4.0,
+      "presentation": 2.0
+    }
+  },
+  {
+    "rank": 16,
+    "project": "CirculoMetrixAI",
+    "total": 14.0,
+    "details": {
+      "originality": 3.0,
+      "technical": 3.0,
+      "design": 2.0,
+      "innovation": 4.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 17,
+    "project": "HEVS",
+    "total": 13.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 2.0,
+      "design": 3.0,
+      "innovation": 2.0,
+      "presentation": 2.0
+    }
+  },
+  {
+    "rank": 18,
+    "project": "Bob",
+    "total": 11.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 2.0,
+      "design": 2.0,
+      "innovation": 2.0,
+      "presentation": 3.0
+    }
+  },
+  {
+    "rank": 19,
+    "project": "AlgoInterview",
+    "total": 11.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 3.0,
+      "design": 2.0,
+      "innovation": 2.0,
+      "presentation": 2.0
+    }
+  },
+  {
+    "rank": 20,
+    "project": "Campussphere",
+    "total": 11.0,
+    "details": {
+      "originality": 2.0,
+      "technical": 3.0,
+      "design": 2.0,
+      "innovation": 2.0,
+      "presentation": 2.0
+    }
+  }
+]
